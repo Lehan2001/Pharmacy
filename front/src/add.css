@@ -1,0 +1,49 @@
+.employee-form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #F4F4F4; /* Light gray background */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5%;
+}
+
+.employee-form h2 {
+    text-align: center;
+    color: #f1c40f; /* Yellow */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.employee-form input[type="text"], 
+.employee-form input[type="email"], 
+.employee-form input[type="number"] {
+    width: 100%;
+    padding: 1px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.employee-form .mb-2 {
+    margin-bottom: 20px;
+}
+
+.employee-form button {
+    width: 30%;
+    background-color: #f1c40f; /* Yellow */
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.employee-form button:hover {
+    background-color: #e1b40d; /* Darker yellow on hover */
+}

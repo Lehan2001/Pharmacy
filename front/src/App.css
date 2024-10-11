@@ -1,0 +1,326 @@
+#root {
+  
+  margin: 0 auto;
+  
+  text-align: center;
+}
+
+
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.employee-form-view,.employee-form-update {
+  width: 80%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F4F4F4;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 10%;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  
+}
+
+/* General form styling */
+.employee-form-view,.employee-form-update {
+  width: 100%;
+  
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.employee-form-view{
+  max-width: 900px;
+  
+  margin: 110px;
+  
+}
+
+
+
+.employee-form-update{
+  max-width: 500px;
+}
+.employee-form-view h3,.employee-form-update h2 {
+  text-align: center;
+  color: #f1c40f; /* Yellow */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Form control styling */
+.employee-form-view,.employee-form-update .form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+
+/* Input labels */
+.employee-form,.employee-form-update label {
+  font-weight: bold;
+  color: #555;
+}
+
+/* Spacing between form fields */
+.employee-form,.employee-form-update .mb-2 {
+  margin-bottom: 30px;
+}
+
+/* Button styling */
+.btn-success {
+  background-color: #f1c40f; /* Yellow */
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%; /* Full width for button */
+  transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #d4ac0d; /* Darker yellow on hover */
+}
+
+/* Adjusting the form width and padding */
+.w-55 {
+  width: 55%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .w-55 {
+    width: 90%;
+  }
+
+  .btn-success {
+    width: 100%;
+  }
+}
+
+
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+}
+
+table th, table td {
+  padding: 0.75em 1em;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f1c40f; /* Yellow background for table headers */
+  color: #fff; /* White text */
+}
+
+table td {
+  background-color: #fff; /* White background for table cells */
+}
+
+/* Button Styles */
+button {
+  border: none;
+  padding: 0.75em 1.5em;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 0.5em;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.9; /* Slight fade effect on hover */
+}
+
+/* Add Button */
+.btn-add {
+  background-color: #f1c40f; /* Yellow background */
+  color: white;
+  text-decoration: none;
+  padding: 0.75em 1.5em;
+  border-radius: 4px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.btn-add:hover {
+  background-color: #d4ac0d; /* Darker yellow on hover */
+}
+
+/* Edit and Delete Button - Common Size */
+.btn {
+  width: 80px; /* Fixed width for both buttons */
+  padding: 0.5em 0; /* Ensures consistent height */
+  font-size: 0.9em; /* Font size consistent */
+  text-align: center;
+  display: inline-block;
+}
+
+/* Edit Button */
+.btn-success {
+  background-color: #f1c40f; /* Yellow background */
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  width: 80px; /* Ensure same width as Delete button */
+  margin-right: 2px;
+}
+
+.btn-success:hover {
+  background-color: #d4ac0d; /* Darker yellow on hover */
+}
+
+/* Delete Button */
+.btn-danger {
+  background-color: #e74c3c; /* Red for delete button */
+  color: white;
+  border-radius: 4px;
+  width: 80px; /* Ensure same width as Edit button */
+}
+
+.btn-danger:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .employee-form {
+    padding: 1.5em; /* Reduced padding for smaller screens */
+  }
+
+  table th, table td {
+    padding: 0.5em; /* Reduced padding inside table cells */
+  }
+
+  button {
+    padding: 0.5em 1em; /* Smaller buttons on mobile */
+  }
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background-color: rgb(255,227,127); /* Yellow */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  display: block;
+  background-color: #fff;
+  color: #333;
+  border-radius: 4px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  background-color: #d4ac0d;
+}
+
+.sidebar-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.sidebar-bottom .profile-icon, .sidebar-bottom .logout-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  
+}
+.sidebar-bottom .profile-icon{
+  margin-right: 15px ;
+}
+
+.sidebar-bottom .logout-icon {
+  transform: rotate(90deg); /* Optional, if you want the logout icon to look like in the image */
+  
+}
+
+
+.sidebar{
+  cursor: pointer;
+}
+
